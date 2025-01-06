@@ -8,6 +8,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["nuxt-icon"],
-  compatibilityDate: "2025-01-03"
+  modules: ["nuxt-icons","nuxt-calendly","@nuxt/image"],
+  compatibilityDate: "2025-01-03",
+  image: {
+    inject: true
+  }
 });

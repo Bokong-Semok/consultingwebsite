@@ -21,10 +21,10 @@
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
-            href="/contact"
+            href="https://calendly.com/nicko-bokongsemok/free-consulting"
             target="_blank"
             rel="noopener"
-        >Get Started
+        >Schedule a Free Consultation
         </LandingLink>
 
       </div>

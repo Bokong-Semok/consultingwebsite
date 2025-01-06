@@ -4,12 +4,19 @@
     <div
       class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap"
     >
-      <Icon class="h-8 md:h-14" name="simple-icons:nuxtdotjs" size="48" />
-      <Icon class="h-8 md:h-14" name="simple-icons:tailwindcss" size="48" />
-      <Icon class="h-8 md:h-14" name="simple-icons:vuedotjs" size="48" />
-      <Icon class="h-8 md:h-14" name="simple-icons:html5" size="48" />
-      <Icon class="h-8 md:h-12" name="simple-icons:vercel" size="48" />
-      <Icon class="h-8 md:h-12" name="simple-icons:netlify" size="48" />
+      <img class="h-8 md:h-14" src="~/assets/icons/dotnetcore/dotnetcore-original.svg"  size="48"/>
+      <img class="h-8 md:h-14" src="~/assets/icons/javascript/javascript-original.svg"  size="48"/>
+      <img class="h-8 md:h-14" src="~/assets/icons/python/python-original.svg"  size="48"/>
+      <img class="h-8 md:h-14" src="~/assets/icons/solidity/solidity-original.svg"  size="48"/>
+      <img class="h-8 md:h-14" src="~/assets/icons/linux/linux-original.svg"  size="48"/>
+      <img class="h-8 md:h-14" src="~/assets/icons/mongodb/mongodb-original.svg"  size="48"/>
+
+
     </div>
   </div>
 </template>
+<script setup lang="ts">
+
+
+
+</script>
