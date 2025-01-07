@@ -12,5 +12,6 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-01-03",
   image: {
     inject: true
-  }
+  },
+  experimental: { appManifest: false }
 });

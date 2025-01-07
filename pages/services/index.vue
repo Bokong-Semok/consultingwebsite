@@ -1,7 +1,8 @@
 <template>
-  <LandingNavbar></LandingNavbar>
-  <slot></slot>
-  <LandingFooter></LandingFooter>
+
 </template>
-<script language="javascript">
+<script setup lang="ts">
+definePageMeta({
+  layout: "landing",
+});
 </script>

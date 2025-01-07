@@ -1,10 +1,10 @@
 {
-  "name": "nuxt-app",
+  "name": "boksem-landing-page",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev --host",
+    "dev": "nuxt build && nuxt prepare &&  nuxt dev --host",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.1",
+    "@nuxt/ui": "^2.20.0",
+    "axios": "^1.7.9",
     "nuxt-calendly": "^0.1.21",
     "nuxt-icons": "^3.2.1"
   }
