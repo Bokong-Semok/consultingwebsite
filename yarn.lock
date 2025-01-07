@@ -835,7 +835,7 @@
     which "^3.0.1"
     ws "^8.18.0"
 
-"@nuxt/icon@^1.9.1":
+"@nuxt/icon@^1.10.3", "@nuxt/icon@^1.9.1":
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/@nuxt/icon/-/icon-1.10.3.tgz#8d95ab8ac1f69cf34c1cbbeebb2997848e9737e8"
   integrity sha512-ESIiSIpETLLcn5p4U8S0F3AQ5Mox0MoHAVKczamY4STh3Dwrc8labLhtN6lunwpQEv6UGuiutdvfkJ88zu44Ew==

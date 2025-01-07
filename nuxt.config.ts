@@ -8,10 +8,15 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["nuxt-icon","nuxt-calendly","@nuxt/image"],
+  modules: ["@nuxt/icon","nuxt-calendly","@nuxt/image"],
   compatibilityDate: "2025-01-03",
   image: {
     inject: true
   },
-  experimental: { appManifest: false }
+  experimental: { appManifest: false },
+  nitro: {
+    devProxy: {
+      host: 'localhost',
+    },
+  },
 });
