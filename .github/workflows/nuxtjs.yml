@@ -12,9 +12,11 @@ jobs:
       - run: corepack disable
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
       # Pick your own package manager and build script
       # NUXT_APP_BASE_URL=/consultingwebsite/
+      - name: install yarn global
+        run: npm i -g --verbose yarn
       - run: yarn install
       - run:  NUXT_APP_BASE_URL=/consultingwebsite/ npx nuxt build --preset github_pages
       - name: Upload artifact
