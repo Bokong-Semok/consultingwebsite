@@ -50,8 +50,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          #cache: ${{ steps.detect-package-manager.outputs.manager }}
-          cache: 'yarn'
+          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          #cache: 'yarn'
           cache-dependency-path: ./package.json
       - name: Setup Pages
         uses: actions/configure-pages@v5
