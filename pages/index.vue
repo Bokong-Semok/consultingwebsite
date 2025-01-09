@@ -2,6 +2,10 @@
 definePageMeta({
   layout: "landing",
 });
+
+useHead({
+  title: "Front page - Boksem Techology"
+});
 </script>
 
 <template>

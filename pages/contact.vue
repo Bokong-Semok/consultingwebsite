@@ -2,6 +2,10 @@
 definePageMeta({
   layout: "landing",
 });
+
+useHead({
+  title: "Contact - Boksem Techology"
+});
 </script>
 
 <template>

@@ -6,4 +6,8 @@
 definePageMeta({
   layout: "landing",
 });
+
+useHead({
+  title: "Service - Blockchain Solution - Boksem Techology"
+});
 </script>

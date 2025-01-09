@@ -1,12 +1,13 @@
 <template>
 
+
 </template>
-<script setup lang="ts">
+<script lang="ts" setup>
 definePageMeta({
   layout: "landing",
 });
 
 useHead({
-  title: "Product - Boksem Techology"
+  title: "Service -AI Solution - Boksem Techology"
 });
 </script>

@@ -1,12 +1,16 @@
 <script setup>
 const menuitems = [
-  {
-    title: "Products",
-    path: "/products",
-  },
+  // {
+  //   title: "Products",
+  //   path: "/products",
+  // },
   {
     title: "Services",
     path: "/services",
+  },
+  {
+    title: "About",
+    path: "/about",
   },
   {
     title: "Contact",
@@ -22,8 +26,11 @@ const open = ref(false);
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg">
-          <span class="font-bold text-slate-800">Bok</span>
-          <span class="text-slate-500">Sem</span>
+          <!--          <span class="font-bold text-slate-800">Bok</span>-->
+          <!--          <span class="text-slate-500">Sem</span>-->
+          <div class="img-fluid">
+            <img alt="Boksem Logo" class="img-fluid" src="~/assets/logo/Boksem-Logo-2025.png">
+          </div>
         </a>
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">

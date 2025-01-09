@@ -62,7 +62,7 @@ const team = [
             :src="item.avatar.src"
             :width="item.avatar.width"
             :height="item.avatar.height"
-            format="avif"
+            type="image/avif"
             alt="Team"
             class="w-full h-full object-cover rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
           />
