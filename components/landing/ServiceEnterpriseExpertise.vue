@@ -254,7 +254,6 @@ const supportedFramework = [
 
 function getImage(folder, fileName) {
   try {
-    var searchLiteral = "@/assets/icons/${folder}/*.svg";
     const modules = import.meta.glob("@/assets/icons/**/*.svg", {eager: true, import: 'default'});
     const moduleKeys = Object.keys(modules)
     const fileSrc = moduleKeys.find(key => key.endsWith(fileName))
