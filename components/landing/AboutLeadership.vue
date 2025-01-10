@@ -30,7 +30,7 @@ const leadership = [
   {
     name: "Airlangga Bhumintara Amitaba",
     title: "COO and Co-Founder",
-    photo: "",
+    photo: "airlangga-indoor.jpg",
     description:
         "I have quite much experience in profesional fields. Starts form programmer, pre-sales and finally Business Manager.\n" +
         "In the future I would like to take career abroad, and after that I might back home and teaching for university",
@@ -51,7 +51,7 @@ const leadership = [
         <v-row class="ma-2" dense>
           <v-col v-for="(item, i) in leadership" :key="i" class="pa-3 d-flex flex-column" cols="12" md="5">
             <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="450px">
-              <img :alt="item.name" :src="getImage(item.photo)" style="max-height: 250px; "/>
+              <img :alt="item.name" :src="getImage(item.photo)" style="height: 250px; "/>
 
               <v-card-item>
                 <v-card-title>{{ item.name }}</v-card-title>

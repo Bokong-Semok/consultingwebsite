@@ -1,8 +1,12 @@
 <template>
+  <LandingContainer>
 
 
+    <LandingServiceChooseUs></LandingServiceChooseUs>
+  </LandingContainer>
 </template>
-<script lang="ts" setup>
+<script setup>
+
 definePageMeta({
   layout: "landing",
 });
