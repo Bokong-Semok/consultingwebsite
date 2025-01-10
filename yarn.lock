@@ -735,6 +735,20 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/cryptocurrency-color@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/cryptocurrency-color/-/cryptocurrency-color-1.2.2.tgz#d4a58734d4d02d2640abc3b638513e77dad97ea0"
+  integrity sha512-gQuPm9hRJQNQjaPenUdQe5/vtrEraLQQyXbaNeddaFCdfSfi/gP9g9lG1K9j0CuCE3P3gd/lwDYrv3FoHYn4tQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/cryptocurrency@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/cryptocurrency/-/cryptocurrency-1.2.2.tgz#6bcbeb5facba9925db5864e5483b6ebc31299ecf"
+  integrity sha512-OlgLOxsY7EpjypNoMszTcdJ6P0wDyps4pjaVDR2KdmYSYkXdJuMx2sKU9WH5DPTkKJbxNydCLzdfsDaiFPNLqg==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/heroicons@^1.2.1":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@iconify-json/heroicons/-/heroicons-1.2.2.tgz#8e03d91655ea6a2d7e1283ba13df13eda50d8bd8"
