@@ -5,5 +5,6 @@
     </v-app>
   </NuxtLayout>
 </template>
-<script lang="ts" setup>
+<script setup>
+
 </script>

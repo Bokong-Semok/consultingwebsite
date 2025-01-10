@@ -291,11 +291,11 @@ function getImage(folder, fileName) {
 
     <div>
       <div>
-        <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+        <div class="flex flex-col gap-3 mx-auto max-w-6xl mt-16">
           <h2 class="font-bold text-3xl text-gray-800">Supported Framework and Datastore</h2>
 
           <v-row class="ma-2" dense>
-            <v-col v-for="(item, i) in supportedFramework" :key="i" class="pa-3 d-flex flex-column" cols="12" md="5">
+            <v-col v-for="(item, i) in supportedFramework" :key="i" class="pa-3 d-flex flex-column" cols="12" md="4">
               <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="450px">
                 <div>
 
@@ -318,17 +318,12 @@ function getImage(folder, fileName) {
                     <v-card-subtitle>{{ item.latestVersion }}</v-card-subtitle>
                     <v-row class="ma-2" dense>
                       <v-col v-for="(lang,index2) in item.languages" :key="index2" class="pa-3 d-flex flex-column"
-                             cols="12"
-                             md="5">
+                      >
                         <img :alt="lang.name" :src="getImage('',lang.icons)" :title="lang.name"
-                             class="" style="max-height: 20px"/>
+                             class="" style="max-height: 30px"/>
                       </v-col>
                     </v-row>
-
-
                   </div>
-
-
                 </div>
 
                 <v-row class="ma-2" dense>

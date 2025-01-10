@@ -1,41 +1,36 @@
 <script setup>
 const benefits = [
   {
-    title: "Custom Application Development",
+    title: "Streamline operations",
     description:
-        " We design, develop, and deploy tailored applications that meet your unique business requirements.",
+        "Automate workflows, reduce manual tasks, and improve efficiency across your organization.",
     icon: "bx:bxs-briefcase",
   },
   {
-    title: "Cloud Computing",
+    title: "Enhance customer experience",
     description:
-        "We leverage cloud platforms to deliver scalable, cost-effective, and secure applications.",
+        "Create intuitive and engaging applications that delight your customers and build lasting relationships.",
     icon: "bx:bx-cloud",
   },
   {
-    title: "Mobile Application Development",
+    title: "Gain a competitive edge",
     description:
-        "We create engaging mobile experiences for both iOS and Android devices.",
+        "Develop innovative solutions that differentiate your business, increase market share, and drive revenue growth",
     icon: "bx:bx-mobile",
   },
   {
-    title: "Modern Framework and Language",
+    title: "Improve decision-making",
     description:
-        " We choose multiple framework and programming language to achieve result",
+        " Leverage data-driven insights with powerful analytics and reporting tools.",
     icon: "bx:bxs-bot",
   },
   {
-    title: "Low latency and high performance datastore",
+    title: "Increase scalability and flexibility",
     description:
-        "We combine high performance data store to improve performance for data across the company",
+        " Build applications that can adapt to your evolving business needs and scale seamlessly as you grow.",
     icon: "bx:bx-network-chart",
   },
-  {
-    title: "Devops and Agile Development",
-    description:
-        "We employ agile methodologies and DevOps practices to accelerate development and ensure continuous delivery",
-    icon: "bx:bx-test-tube",
-  },
+
 ];
 </script>
 
@@ -44,7 +39,19 @@ const benefits = [
     <h2 class="text-2xl lg:text-2xl font-bold lg:tracking-tight">
       Our benefits
     </h2>
-
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+      <div v-for="item of benefits" class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
+          <Icon :name="item.icon" class="text-white"/>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{{ item.title }}</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">
+            {{ item.description }}
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 

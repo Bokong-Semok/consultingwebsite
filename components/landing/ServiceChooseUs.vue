@@ -28,7 +28,7 @@ const whychooseus = [
     title: "Strong quality commitment",
     description:
         "Our development will test multiple times with TDD",
-    icon: "bx:bxs-test-tube",
+    icon: "bx:bx-test-tube",
   },
 
 ];
