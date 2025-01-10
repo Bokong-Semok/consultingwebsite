@@ -32,10 +32,6 @@ export default defineNuxtConfig({
     css: [
         "~/assets/css/main.css",
         '@fortawesome/fontawesome-svg-core/styles.css',
-        // "@fortawesome/free-brands-svg-icons",
-        // "@fortawesome/free-regular-svg-icons",
-        // "@fortawesome/free-solid-svg-icons",
-        // "@fortawesome/vue-fontawesome"
     ],
     postcss: {
         plugins: {
@@ -47,6 +43,7 @@ export default defineNuxtConfig({
         "@nuxt/icon",
         "nuxt-calendly",
         "@nuxt/image",
+        "nuxt-gtag",
         (_options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', (config) => {
                 // @ts-expect-error
@@ -54,6 +51,7 @@ export default defineNuxtConfig({
             })
         }
     ],
+
 
     compatibilityDate: "2025-01-03",
     image: {

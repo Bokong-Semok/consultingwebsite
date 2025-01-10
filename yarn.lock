@@ -4548,6 +4548,16 @@ nuxt-calendly@^0.1.21:
     "@nuxt/kit" "^3.9.3"
     defu "^6.1.4"
 
+nuxt-gtag@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/nuxt-gtag/-/nuxt-gtag-3.0.2.tgz#1ea9f2ae747ef46fcf85debdff9c4e40535725b3"
+  integrity sha512-0Spu/rffPxW7REebkjE22qQOuVZIQuyIuvd61InDdJU+d+gRIqWhrUuKBWdk43N/J1elj+cTK2kEdk5FQX7vdQ==
+  dependencies:
+    "@nuxt/kit" "^3.14.1592"
+    defu "^6.1.4"
+    pathe "^1.1.2"
+    ufo "^1.5.4"
+
 nuxt-icon@^1.0.0-beta.7:
   version "1.0.0-beta.7"
   resolved "https://registry.yarnpkg.com/nuxt-icon/-/nuxt-icon-1.0.0-beta.7.tgz#314c6d7fded7b55bb7ed0ce17eaa6d1b5f8464a3"
