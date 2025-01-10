@@ -18,7 +18,7 @@ jobs:
       - name: install yarn global
         run: npm i -g --verbose yarn
       - run: yarn install
-      - run:  NUXT_APP_BASE_URL=/consultingwebsite/ npx nuxt build --preset github_pages
+      - run:  npx nuxt build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
