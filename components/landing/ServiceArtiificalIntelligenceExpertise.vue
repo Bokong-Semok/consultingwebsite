@@ -351,14 +351,14 @@ function getImage(folder, fileName) {
         <div class="flex flex-col gap-3 mx-auto max-w-6xl mt-16">
           <h2 class="font-bold text-3xl text-gray-800">Our AI solutions Technology</h2>
 
-          <v-row class="ma-2" dense>
+          <v-row class="ma-1" dense>
             <v-col v-for="(item, i) in supportedSolutions" :key="i" class="pa-3 d-flex flex-column" cols="12" md="4"
                    sm="3" xs="3">
               <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="400px">
 
-                <div class="d-flex flex-no-wrap justify-space-between">
+                <div class="d-flex flex-no-wrap">
                   <v-avatar
-                      class="ma-3"
+                      class="ma-1"
                       rounded="0"
                       size="125"
                   >
@@ -371,8 +371,8 @@ function getImage(folder, fileName) {
                     </v-card-title>
 
                     <v-card-subtitle>{{ item.latestVersion }}</v-card-subtitle>
-                    <v-row class="ma-2" dense style="width:180px;">
-                      <v-col v-for="(lang,index2) in item.languages" :key="index2" cols="3" md="3" sm="3" xs="3">
+                    <v-row class="" dense style="width:150px;">
+                      <v-col v-for="(lang,index2) in item.languages" :key="index2" cols="4" md="4" sm="4" xs="4">
                         <img :alt="lang.name" :src="getImage('',lang.icons)" :title="lang.name"
                              class="" style="max-height: 30px;max-width: 30px;"/>
                       </v-col>
