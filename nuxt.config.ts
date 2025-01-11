@@ -53,7 +53,9 @@ export default defineNuxtConfig({
             })
         }
     ],
-
+    plugins: [
+        '~/plugins/global-variable-icons.js'
+    ],
 
     compatibilityDate: "2025-01-03",
     image: {
