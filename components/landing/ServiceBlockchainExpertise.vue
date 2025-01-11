@@ -86,19 +86,19 @@ const supportedBlockchain = [
     ],
     apps: [
       {
-        name: "web 3.0",
+        name: "web 3.0, Gaming, Social Media",
         icons: "web3.png",
       },
       {
-        name: "NFT",
+        name: "NFT Market",
         icons: "nft.png",
       },
       {
-        name: "Marketplace",
+        name: "Physical and Virtual Marketplace",
         icons: "retailer.png",
       },
       {
-        name: "Decentralized Wallet",
+        name: "Decentralized Financial",
         icons: "wallet.png",
       },
     ],
@@ -173,6 +173,64 @@ const supportedBlockchain = [
       },
     ],
   },
+  {
+    title: "Solana",
+    description: "Solana is a blockchain platform which uses a proof-of-stake mechanism to provide smart contract functionality",
+    folder: "blockchain",
+    icons: "solana-sol-logo.svg",
+    latestVersion: "",
+    languages: [],
+    platforms: [
+      {
+        name: "javascript",
+        icons: "javascript-original.svg",
+      },
+      {
+        name: "rust",
+        icons: "rust-original.svg",
+      },
+      {
+        name: "Windows 10, Windows 11, Windows Server 2018 and above",
+        icons: "windows11-original.svg"
+      },
+      {
+        name: "Linux",
+        icons: "linux-original.svg"
+      },
+      {
+        name: "Azure Cloud",
+        icons: "azure-original.svg"
+      },
+      {
+        name: "AWS Cloud",
+        icons: "amazonwebservices-original-wordmark.svg"
+      },
+      {
+        name: "Google Cloud",
+        icons: "googlecloud-original.svg"
+      },
+
+
+    ],
+    apps: [
+      {
+        name: "DApps Gaming ",
+        icons: "dapps-gaming.png",
+      },
+      {
+        name: "Decentralized Financial Transaction",
+        icons: "financial-statement.png",
+      },
+      {
+        name: "Payment and Payment Gateway",
+        icons: "payment-gateway.svg",
+      },
+      {
+        name: "NFT marketplace",
+        icons: "nft.png",
+      },
+    ],
+  },
 ];
 
 
@@ -219,11 +277,10 @@ function getImage(folder, fileName) {
           <h2 class="font-bold text-3xl text-gray-800">Our Supported Blockchain Technology</h2>
 
           <v-row class="ma-2" dense>
-            <v-col v-for="(item, i) in supportedBlockchain" :key="i" class="pa-3 d-flex flex-column" cols="12" md="4">
-              <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="450px">
-                <div>
+            <v-col v-for="(item, i) in supportedBlockchain" :key="i" class="pa-3 d-flex flex-column" cols="12" md="4"
+                   sm="3" xs="3">
+              <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="400px">
 
-                </div>
                 <div class="d-flex flex-no-wrap justify-space-between">
                   <v-avatar
                       class="ma-3"
@@ -248,7 +305,17 @@ function getImage(folder, fileName) {
                     </v-row>
                   </div>
                 </div>
+
                 <v-divider class="mx-4 mb-1"></v-divider>
+
+                <v-card-text class="flex">
+                  <div class="justify-stretch">
+                    {{ item.description }}
+                  </div>
+                </v-card-text>
+
+                <v-divider class="mx-4 mb-1"></v-divider>
+
                 <v-card-subtitle>Platform</v-card-subtitle>
                 <v-row class="ma-2" dense>
                   <v-col v-for="(lang,index3) in item.platforms" :key="index3" class="d-flex flex-column"
@@ -262,20 +329,27 @@ function getImage(folder, fileName) {
 
                 <v-row class="ma-2" dense>
                   <v-col v-for="(lang,index4) in item.apps" :key="index4" class="d-flex flex-column"
-                         cols="3" md="3" sm="3" xs="3">
-                    <img :alt="lang.name" :src="getImage('',lang.icons)" :title="lang.name" style="max-height: 30px;"/>
+                         cols="12" md="12" sm="12" xs="12">
+
+                    <div class="d-flex flex-no-wrap">
+                      <v-avatar
+                          class="ma-3"
+                          rounded="0"
+                          size="30">
+
+                        <img :alt="lang.name" :src="getImage('',lang.icons)" :title="lang.name"
+                             style="max-height: 30px;"/>
+
+                      </v-avatar>
+                      <div>
+                        <v-card-subtitle class="ma-3">{{ lang.name }}</v-card-subtitle>
+                      </div>
+                    </div>
                   </v-col>
                 </v-row>
 
                 <v-divider class="mx-4 mb-1"></v-divider>
 
-                <v-card-text class="flex">
-                  <div class="justify-stretch">
-                    {{ item.description }}
-                  </div>
-                </v-card-text>
-
-                <v-divider class="mx-4 mb-1"></v-divider>
 
                 <v-card-title>Action</v-card-title>
 

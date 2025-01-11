@@ -44,6 +44,8 @@ export default defineNuxtConfig({
         "nuxt-calendly",
         "@nuxt/image",
         "nuxt-gtag",
+        '@nuxtjs/tailwindcss',
+        '@unocss/nuxt',
         (_options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', (config) => {
                 // @ts-expect-error
