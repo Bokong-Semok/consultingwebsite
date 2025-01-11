@@ -393,7 +393,7 @@ function getImage(folder, fileName) {
                 <v-card-subtitle>Platform</v-card-subtitle>
                 <v-row class="ma-2" dense>
                   <v-col v-for="(lang,index3) in item.platforms" :key="index3" class="d-flex flex-column"
-                         cols="3" md="3" sm="3" xs="3">
+                         cols="4" md="4" sm="4" xs="4">
                     <img :alt="lang.name" :src="getImage('',lang.icons)" :title="lang.name" style="max-height: 30px"/>
                   </v-col>
                 </v-row>
