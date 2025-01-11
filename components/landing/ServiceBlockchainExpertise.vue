@@ -279,7 +279,7 @@ function getImage(folder, fileName) {
           <v-row class="ma-2" dense>
             <v-col v-for="(item, i) in supportedBlockchain" :key="i" class="pa-3 d-flex flex-column" cols="12" md="4"
                    sm="3" xs="3">
-              <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="400px">
+              <v-card class="elevation-5 flex d-flex flex-column fill-height" max-width="450px">
 
                 <div class="d-flex flex-no-wrap justify-space-between">
                   <v-avatar
@@ -329,7 +329,7 @@ function getImage(folder, fileName) {
 
                 <v-row class="ma-2" dense>
                   <v-col v-for="(lang,index4) in item.apps" :key="index4" class="d-flex flex-column"
-                         cols="12" md="12" sm="12" xs="12">
+                  >
 
                     <div class="d-flex flex-no-wrap">
                       <v-avatar

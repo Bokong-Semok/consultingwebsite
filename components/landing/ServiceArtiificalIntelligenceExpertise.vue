@@ -371,7 +371,7 @@ function getImage(folder, fileName) {
                     </v-card-title>
 
                     <v-card-subtitle>{{ item.latestVersion }}</v-card-subtitle>
-                    <v-row class="ma-2" dense style="min-width:200px; max-width: 200px;">
+                    <v-row class="ma-2" dense style="width:180px;">
                       <v-col v-for="(lang,index2) in item.languages" :key="index2" cols="3" md="3" sm="3" xs="3">
                         <img :alt="lang.name" :src="getImage('',lang.icons)" :title="lang.name"
                              class="" style="max-height: 30px;max-width: 30px;"/>
