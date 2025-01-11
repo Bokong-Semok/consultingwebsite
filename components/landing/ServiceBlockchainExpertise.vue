@@ -327,13 +327,13 @@ function getImage(folder, fileName) {
                 <v-divider class="mx-4 mb-1"></v-divider>
                 <v-card-subtitle>Application</v-card-subtitle>
 
-                <v-row class="ma-2" dense>
+                <v-row class="" dense>
                   <v-col v-for="(lang,index4) in item.apps" :key="index4" class="d-flex flex-column"
-                  >
+                         cols="12" md="12" sm="12" xs="12">
 
                     <div class="d-flex flex-no-wrap">
                       <v-avatar
-                          class="ma-3"
+                          class="ma-1"
                           rounded="0"
                           size="30">
 
@@ -342,7 +342,7 @@ function getImage(folder, fileName) {
 
                       </v-avatar>
                       <div>
-                        <v-card-subtitle class="ma-3">{{ lang.name }}</v-card-subtitle>
+                        <v-card-subtitle class="ma-1">{{ lang.name }}</v-card-subtitle>
                       </div>
                     </div>
                   </v-col>
