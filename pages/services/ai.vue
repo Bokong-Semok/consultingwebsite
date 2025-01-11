@@ -1,7 +1,7 @@
 <template>
   <LandingContainer>
-
-
+    <LandingServiceEnterpriseBenefit></LandingServiceEnterpriseBenefit>
+    <LandingServiceArtiificalIntelligenceExpertise></LandingServiceArtiificalIntelligenceExpertise>
     <LandingServiceChooseUs></LandingServiceChooseUs>
   </LandingContainer>
 </template>
