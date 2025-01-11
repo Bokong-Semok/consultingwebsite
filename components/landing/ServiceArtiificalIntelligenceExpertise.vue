@@ -1,5 +1,8 @@
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import {inject} from 'vue'
+
+const globalIconStore = inject('globalIconStore')
 
 const expertise = [
   {
@@ -311,9 +314,10 @@ const supportedSolutions = [
 
 function getImage(folder, fileName) {
   try {
-    const modules = import.meta.glob("@/assets/icons/**/*.{svg,png}", {eager: true, import: 'default'});
-    const moduleKeys = Object.keys(modules)
-    const fileSrc = moduleKeys.find(key => key.endsWith(fileName))
+    // const modules = import.meta.glob("@/assets/icons/**/*.{svg,png}", {eager: true, import: 'default'});
+    const modules = globalIconStore.allIcons;
+    const moduleKeys = Object.keys(modules);
+    const fileSrc = moduleKeys.find(key => key.endsWith(fileName));
 
     return fileSrc ? modules[fileSrc] : ''
   } catch (err) {

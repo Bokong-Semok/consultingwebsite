@@ -44,6 +44,7 @@
     "axios": "^1.7.9",
     "nuxt-calendly": "^0.1.21",
     "nuxt-icons": "^3.2.1",
+    "pinia": "^2.3.0",
     "unocss": "^65.4.0",
     "vuetify-nuxt-module": "^0.18.3"
   },
