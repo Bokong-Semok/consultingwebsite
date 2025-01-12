@@ -46,6 +46,7 @@ export default defineNuxtConfig({
         "nuxt-gtag",
         '@nuxtjs/tailwindcss',
         '@unocss/nuxt',
+        '@nuxtjs/turnstile',
         (_options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', (config) => {
                 // @ts-expect-error
@@ -57,7 +58,17 @@ export default defineNuxtConfig({
         '~/plugins/global-icons-plugins.js'
     ],
 
-    runtimeConfig: {},
+    turnstile: {
+        siteKey: '0x4AAAAAAA5Go8cn_-PWpmIU',
+    },
+
+    runtimeConfig: {
+        turnstile: {
+            // This can be overridden at runtime via the NUXT_TURNSTILE_SECRET_KEY
+            // environment variable.
+            secretKey: '0x4AAAAAAA5Go3VJArNCNRd_oewrzGHkfp8',
+        },
+    },
 
     compatibilityDate: "2025-01-03",
     image: {
